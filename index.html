@@ -5,7 +5,7 @@
         <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     </head>
     <body style="padding:0;margin:0;">
-        <iframe onload="return showFrame();" style="width:100%;border:0px;display:none;" id="body_iframe" src="http://album.yogumanivannan.com/"></iframe>
+        <iframe style="width:100%;border:0px;display:none;" id="body_iframe" src="http://album.yogumanivannan.com/"></iframe>
     </body>
 </html>
 <script type='text/javascript'>
@@ -25,5 +25,9 @@
         var loadercontent = '<img id="splash_loader" style="width:100%;" src="splash_loader.png"/>';
         jQuery('body').prepend(loadercontent);
         jQuery('#splash_loader').css('height',bodyheight+'px');
+    });
+    
+    jQuery(window).load(function(){
+        showFrame();
     });
 </script>
